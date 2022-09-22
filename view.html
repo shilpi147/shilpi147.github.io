@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>View Records</title>
+    </head>
+    <body style="background-color:aquamarine">
+        <h1>Details of the user !</h1>
+        <table border="5">
+            <th>ID</th>
+            <th>Username</th>
+            <th>Email</th>
+            <th>Mobile Number</th>
+            <th>Address</th>
+            <th>City</th>
+            <th>State</th>
+            <th>Pincode</th>
+            <th>Country</th>
+            <th>Company Name</th>
+            <th>Occupation</th>
+            <th>Years of experience</th>
+            
+            {% for i in data %}
+            <tr></tr>
+                <td>{{i.id}}</td>
+                <td>{{i.username}}</td>
+                <td>{{i.email}}</td>
+                <td>{{i.phone}}</td>
+                <td>{{i.address}}</td>
+                <td>{{i.city}}</td>
+                <td>{{i.state}}</td>
+                <td>{{i.pincode}}</td>
+                <td>{{i.country}}</td>
+                <td>{{i.company}}</td>
+                <td>{{i.occupation}}</td>
+                <td>{{i.experience}}</td>
+
+                
+
+            {% endfor %}
+            </tr>
+        </table>
+        <br>
+        <br>
+        <a href="signup">Click here to go to Sign-Up page !</a>
+    </body>
+</html>
