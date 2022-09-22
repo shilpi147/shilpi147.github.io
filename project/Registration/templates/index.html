@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <title>Sign-Up</title>
+    </head>
+    <body style="background-color:aquamarine" align="center">
+        <form action="success_regis" method="post">
+            {% csrf_token %}
+        <h1>Please Sign up first !</h1>
+        <table align="center">
+        <tr>    
+            <th><label>Username:</label></th>
+            <td><input type="text" name="uname" style="width: 200px;" placeholder="Ex:abcde"/></td>
+        </tr>
+
+        <tr>
+             <th><label>Password:</label></th>
+              <td><input type="password" name="password" style="width: 300px;" placeholder="must contain special character @#"/></td>
+        </tr>
+
+       <tr>
+            <th><label>Name:</label></th>
+            <td><input type="text" name="name" style="width: 200px;"/></td>
+        </tr>
+
+        <tr>
+            <th><label>E-mail:</label></th>
+            <td><input type="email" name="email" style="width: 300px;" placeholder="Ex:abc@example"/></td>
+        </tr>
+
+        <tr>
+            <th><label>Mobile Number:</label></th>
+            <td><input type="number" name="phone" style="width: 200px;" placeholder="1234-567-890"/></td>
+        </tr>
+
+        <tr>
+             <th><label>Address:</label></th>
+            <td ><input type="text" name="address" style="width: 500px; height: 100px;"/></td>
+        </tr>
+    
+        <tr>
+            <th><label>City:</label></th>
+            <td><input type="text" name="city" placeholder="Ex: India"/></td>
+        </tr>
+
+        <tr>
+            <th><label>State:</label></th>
+            <td><input type="text" name="state" placeholder="Ex:Karnataka"/></td>
+        </tr>
+
+        <tr>
+            <th><label>Pincode:</label></th>
+            <td><input type="number" name="pin" placeholder="Ex:560000"/></td>
+        </tr>
+
+        <tr>
+            <th><label>Country:</label></th>
+            <td><input type="text" name="country" placeholder="Ex:India"/></td>
+        </tr>
+
+        <tr>
+            <th><label>Company Name:</label></th>
+            <td><input type="text" name="company" style="width: 400px;"/></td>
+        </tr>
+
+        <tr>
+            <th><label>Occupation:</label></th>
+            <td><input type="text" name="occupation" style="width: 200px;"/></td>
+        </tr>
+
+        <tr>
+            <th><label>Year of Experience:</label></th>
+            <td><input type="number" name="experience"/></td>
+        </tr>
+        </table>
+        <br>
+        <br>
+        <input type="submit" value="SignUp"style="width: 200px;"/>
+       
+        </form>
+
+        
+    </body>
+</html>
